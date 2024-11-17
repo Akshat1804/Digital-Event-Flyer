@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.design{
+    width: 400px;
+    height: 200px;
+    background-color: #4e2246a8;
+    position: absolute;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+nav{
+    width: 100%;
+    height: 10%;
+    margin-top: 30px;
+    justify-content: center;align-items: center;display: flex;
+}
+
+
+
+.imgs{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs > img{
+    width: 800px;
+}
+
+.imgs > h1{
+    color: #4e2246
+    ;
+    font-family:  Sevillana;
+    font-size: 65px;
+    letter-spacing: 11px;
+    position: absolute;
+    margin-top: 80px;
+    margin-right: 190px;
+}                                                                                                                                                                                                                                                                                                                                                                                     
+
+.imgs  > h1::first-letter{
+font-size: 110px;
+
+}
+
+.details{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h1{
+    font-size: 28px;
+    color: #4e2246
+}
+
+.date{
+    margin-left: 150px;
+    font-size: 60px;
+}
+
+.date h3{
+    font-size: 90px;
+    color: #4e2246;
+}
+
+.date h5{
+    font-family:    Sevillana;
+    color: #4e2246;
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  
+main{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+    .design{
+        width: 100px;
+        height: 70px;
+    }
+
+    nav{
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .imgs{
+        flex-direction: column;
+    }
+
+    .imgs > img{
+        margin-top: 20px;
+        width: 500px;
+    }
+
+    .imgs h1 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        margin-left: 200px;
+    }
+
+    .imgs h1::first-letter{
+        font-size: 40px;
+    }
+
+    .date{
+        font-size: 20px;
+        margin-left: 0px;
+        margin-bottom: 90px;
+    }
+
+    .date h3{
+font-size: 20px;
+margin-left: 8px;
+    }
+
+    .details{
+        flex-direction: column;
+    }
+
+    .box h1{
+        font-size: 18px;
+    }
+
+    .box{
+        width: 200px;
+        height: 100px;
+        margin-left: 80px;
+    }
+    
+  }
